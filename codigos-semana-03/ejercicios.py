@@ -22,6 +22,11 @@ class Auto:
               self.anho , " y  el color ", self.color)
 
 
+    """
+    Crear un metodo obtener_info() que obtenga el marca y la color del auto
+    """
+    def obtener_info(self):
+        return self.marca +  "|" +  self.color
 
 
 
@@ -34,6 +39,8 @@ print(auto_toyota.anho)
 auto_toyota.imprimir_info()
 auto_toyota.imprimir()
 
+r = auto_toyota.obtener_info()
+print(r)
 
 
 auto_nissan =  Auto("Negro","Nissan",2021)
@@ -44,6 +51,16 @@ print(auto_nissan.anho)
 
 auto_nissan.imprimir_info() 
 auto_nissan.imprimir()
+
+r = auto_nissan.obtener_info()
+print(r)
+
+
+
+"""
+Crear un objeto llamado auto_mazda  y le agregas la marca, el color y el anho
+
+"""
 
 
 exit(-1)
