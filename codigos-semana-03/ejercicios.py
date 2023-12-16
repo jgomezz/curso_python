@@ -17,6 +17,12 @@ class Auto:
     """
     Crear un metodo imprimir() que me imprima los 3 atributos de la clase
     """
+    def imprimir(self):
+        print("La marca es " , self.marca , ", el anho es " , 
+              self.anho , " y  el color ", self.color)
+
+
+
 
 
 auto_toyota =  Auto("Blanco","Toyota",2020)
@@ -25,7 +31,8 @@ print(auto_toyota.color)
 print(auto_toyota.marca)
 print(auto_toyota.anho)
 
-print(auto_toyota.imprimir_info())
+auto_toyota.imprimir_info()
+auto_toyota.imprimir()
 
 
 
@@ -35,7 +42,8 @@ print(auto_nissan.color)
 print(auto_nissan.marca)
 print(auto_nissan.anho)
 
-print(auto_nissan.imprimir_info()) 
+auto_nissan.imprimir_info() 
+auto_nissan.imprimir()
 
 
 exit(-1)
