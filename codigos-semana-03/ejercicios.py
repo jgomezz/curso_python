@@ -37,7 +37,11 @@ class Auto:
         if self.ciudad == "Lima" and self.garantia > 2:  
             self.garantia = 2 
 
+    
+    @classmethod
+    def modificar_ciudad(cls, nueva_ciudad):
 
+        cls.ciudad =  nueva_ciudad
 
 
 auto_toyota =  Auto("Blanco","Toyota",2020)
@@ -62,13 +66,21 @@ auto_nissan.imprimir()
 r = auto_nissan.obtener_info()
 print(r)
 
-
-#Auto.ciudad = "Arequipa"
 #auto_nissan.ciudad = "Arequipa"
+
+#Auto.ciudad = "Trujillo"
+auto_nissan.modificar_ciudad("Arequipa")
+
+Auto.modificar_ciudad("Trujillo")
 
 auto_nissan.incrementar_garantia(2)
 
 print(f"Garantia {auto_nissan.garantia}")
+
+
+
+
+
 
 
 
