@@ -5,6 +5,7 @@ class Auto:
         self.color = color1
         self.marca = marca1
         self.anho = anho1
+        self.garantia = 1  # Garantia del auto
 
     """
     Crear un metodo que me imprima la marca y el anho del auto
@@ -35,7 +36,6 @@ auto_toyota =  Auto("Blanco","Toyota",2020)
 print(auto_toyota.color)
 print(auto_toyota.marca)
 print(auto_toyota.anho)
-
 auto_toyota.imprimir_info()
 auto_toyota.imprimir()
 
@@ -44,11 +44,9 @@ print(r)
 
 
 auto_nissan =  Auto("Negro","Nissan",2021)
-
 print(auto_nissan.color)
 print(auto_nissan.marca)
 print(auto_nissan.anho)
-
 auto_nissan.imprimir_info() 
 auto_nissan.imprimir()
 
@@ -61,6 +59,15 @@ print(r)
 Crear un objeto llamado auto_mazda  y le agregas la marca, el color y el anho
 
 """
+
+
+"""
+Crear un metodo para incrementar la garantia de un auto, se pasara la canitdad de amhos a incrementar
+
+auto_nissan.incrementar_garantia(2)
+
+"""
+
 
 
 exit(-1)
