@@ -29,6 +29,8 @@ class Auto:
     def obtener_info(self):
         return self.marca +  "|" +  self.color
 
+    def incrementar_garantia(self, extra_garantia):  
+        self.garantia += extra_garantia 
 
 
 auto_toyota =  Auto("Blanco","Toyota",2020)
@@ -52,6 +54,10 @@ auto_nissan.imprimir()
 
 r = auto_nissan.obtener_info()
 print(r)
+
+auto_nissan.incrementar_garantia(2)
+
+print(auto_nissan.garantia)
 
 
 
