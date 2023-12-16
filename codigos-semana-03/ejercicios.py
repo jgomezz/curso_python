@@ -14,7 +14,9 @@ class Auto:
         print("La marca es " , self.marca , " y el anho es " , self.anho)
 
 
-
+    """
+    Crear un metodo imprimir() que me imprima los 3 atributos de la clase
+    """
 
 
 auto_toyota =  Auto("Blanco","Toyota",2020)
