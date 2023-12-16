@@ -1,6 +1,8 @@
 
 class Auto:
     
+    ciudad = "Lima"
+
     def __init__(self, color1, marca1, anho1) :
         self.color = color1
         self.marca = marca1
@@ -31,6 +33,11 @@ class Auto:
 
     def incrementar_garantia(self, extra_garantia):  
         self.garantia += extra_garantia 
+        
+        if self.ciudad == "Lima" and self.garantia > 2:  
+            self.garantia = 2 
+
+
 
 
 auto_toyota =  Auto("Blanco","Toyota",2020)
@@ -55,11 +62,20 @@ auto_nissan.imprimir()
 r = auto_nissan.obtener_info()
 print(r)
 
+
+#Auto.ciudad = "Arequipa"
+#auto_nissan.ciudad = "Arequipa"
+
 auto_nissan.incrementar_garantia(2)
 
-print(auto_nissan.garantia)
+print(f"Garantia {auto_nissan.garantia}")
 
 
+
+"""
+Agregar el color y la marca en la clae Auto, y pasarselo por el constructor.
+
+"""
 
 """
 Crear un objeto llamado auto_mazda  y le agregas la marca, el color y el anho
@@ -74,11 +90,15 @@ auto_nissan.incrementar_garantia(2)
 
 """
 
+"""
+Si el auto se compro en la ciudad de Lima , la garantia maxima es de 2 anhos
+caso contrario , no hay restricciones
+
+auto_nissan.incrementar_garantia(2)
+
+"""
+
+
 
 
 exit(-1)
-
-"""
-Agregar el color y la marca en la clae Auto, y pasarselo por el constructor.
-
-"""
