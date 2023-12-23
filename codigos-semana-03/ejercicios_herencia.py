@@ -16,18 +16,22 @@ class Auto:
 
     def incrementar_garantia(self, extra_garantia):  
         self.garantia += extra_garantia         
-        if self.ciudad == "Lima" and self.garantia > 2:  
+        if self.ciudad == "Lima" and self.garantia > 2  :  
             self.garantia = 2 
 
 # Crear clase hija
             
 class SUV (Auto) :
 
+    def __init__(self, color, marca, anho, ciudad, capacidad) :
+        super().__init__(color, marca, anho, ciudad)
+        self.capacidad = capacidad
+
     def imprimir_info(self):
         print("La marca es " , self.marca , 
               " , el anho es " , self.anho, 
-              " y el color es " , self.color)
-
+              " , el color es " , self.color,
+              " y tiene una capacidad de " , self.capacidad , " personas")
 
 class SEDAN (Auto) :
     pass
@@ -42,7 +46,7 @@ auto_hyundai = Auto("Blanco","Hyundai","2022","Lima" )
 auto_hyundai.imprimir_info()
 
 
-suv_hyundai = SUV("Negro","Hyundai","2023","Arequipa" )
+suv_hyundai = SUV("Negro","Hyundai","2023","Arequipa",6)
 
 suv_hyundai.imprimir_info()
 
