@@ -15,3 +15,13 @@ CREATE TABLE employees (
  -- INSERTAR UN REGISTRO
 INSERT INTO employees (first_name, last_name, gender) 
 VALUES ('Juan','Acosta','M');
+
+INSERT INTO employees (first_name, last_name, gender) 
+VALUES ('Maria','Melendez','M');
+
+INSERT INTO employees (first_name, last_name, gender) 
+VALUES ('Jose','Galez','H');
+
+-- CONSULTAR REGISTROS DE UNA TABLA
+SELECT * 
+FROM employees;
