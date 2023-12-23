@@ -7,3 +7,7 @@ CREATE TABLE employees (
     hire_date date ,
     PRIMARY KEY (emp_no)
  )
+
+ -- ELIMINA UNA TABLA
+ DROP TABLE employees;
+ 
