@@ -22,6 +22,9 @@ VALUES ('Maria','Melendez','M');
 INSERT INTO employees (first_name, last_name, gender) 
 VALUES ('Jose','Galez','H');
 
+INSERT INTO employees (first_name, last_name, gender) 
+VALUES ('Silvia','Montoya','M');
+
 -- CONSULTAR REGISTROS DE UNA TABLA
 SELECT * 
 FROM employees;
