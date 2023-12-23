@@ -30,3 +30,8 @@ FROM employees;
 SELECT first_name, last_name, gender 
 FROM employees
 WHERE first_name = 'Juan'
+
+SELECT first_name, last_name, gender 
+FROM employees
+WHERE first_name LIKE 'J%'
+
