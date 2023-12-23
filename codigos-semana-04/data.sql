@@ -12,3 +12,6 @@ CREATE TABLE employees (
  -- ELIMINAR UNA TABLA
  DROP TABLE employees;
  
+ -- INSERTAR UN REGISTRO
+INSERT INTO employees (first_name, last_name, gender) 
+VALUES ('Juan','Acosta','M');
