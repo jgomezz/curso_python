@@ -35,3 +35,12 @@ SELECT first_name, last_name, gender
 FROM employees
 WHERE first_name LIKE 'J%'
 
+SELECT * 
+FROM employees 
+WHERE gender = 'M'; 
+
+-- ACTUALIZAR UN REGISTRO 
+UPDATE employees
+SET gender = 'H' 
+WHERE emp_no = 1
+
