@@ -24,10 +24,28 @@ class Auto:
 class SUV (Auto) :
     pass
 
+class SEDAN (Auto) :
+    pass
+
+class VAN (Auto) :
+    pass
+
+
+
 auto_hyundai = Auto("Blanco","Hyundai","2022","Lima" )
 
 auto_hyundai.imprimir_info()
 
 suv_hyundai = SUV("Negro","Hyundai","2023","Arequipa" )
+
+suv_hyundai.imprimir_info()
+
+
+sedan_hyundai = SEDAN("Negro","Hyundai","2023","Nazca" )
+
+sedan_hyundai.imprimir_info()
+
+
+van_hyundai = VAN("Negro","Hyundai","2023","Arequipa" )
 
 suv_hyundai.imprimir_info()
