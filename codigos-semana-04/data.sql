@@ -47,3 +47,6 @@ UPDATE employees
 SET gender = 'H' 
 WHERE emp_no = 1
 
+-- ELIMINAR UN REGISTRO
+DELETE FROM employees
+WHERE  emp_no = 5
