@@ -1,3 +1,4 @@
+ -- CREAR UNA TABLA
 CREATE TABLE employees (
     emp_no int(11) NOT NULL AUTO_INCREMENT, 
     first_name varchar(14) NOT NULL,
@@ -8,6 +9,6 @@ CREATE TABLE employees (
     PRIMARY KEY (emp_no)
  )
 
- -- ELIMINA UNA TABLA
+ -- ELIMINAR UNA TABLA
  DROP TABLE employees;
  
