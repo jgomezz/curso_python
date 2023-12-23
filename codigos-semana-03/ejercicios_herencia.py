@@ -37,8 +37,15 @@ class SEDAN (Auto) :
     pass
 
 class VAN (Auto) :
-    pass
+    def __init__(self, color, marca, anho, ciudad, propietario):
+        super().__init__(color, marca, anho, ciudad)
+        self.propietario = propietario
 
+    def imprimir_info(self):
+        print("La marca es " , self.marca , 
+              " , el anho es " , self.anho, 
+              " , el color es " , self.color,
+              " y el propietario es  " ,self.propietario)
 
 
 auto_hyundai = Auto("Blanco","Hyundai","2022","Lima" )
@@ -56,7 +63,7 @@ sedan_hyundai = SEDAN("Negro","Hyundai","2023","Nazca" )
 sedan_hyundai.imprimir_info()
 
 
-van_hyundai = VAN("Negro","Hyundai","2023","Arequipa" )
+van_hyundai = VAN("Negro","Hyundai","2023","Arequipa", "Jaime GOmez" )
 
 van_hyundai.imprimir_info()
 
