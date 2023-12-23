@@ -25,3 +25,8 @@ VALUES ('Jose','Galez','H');
 -- CONSULTAR REGISTROS DE UNA TABLA
 SELECT * 
 FROM employees;
+
+-- CONSULTAR REGISTROS USANDO FILTROS
+SELECT first_name, last_name, gender 
+FROM employees
+WHERE first_name = 'Juan'
