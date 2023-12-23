@@ -22,7 +22,12 @@ class Auto:
 # Crear clase hija
             
 class SUV (Auto) :
-    pass
+
+    def imprimir_info(self):
+        print("La marca es " , self.marca , 
+              " , el anho es " , self.anho, 
+              " y el color es " , self.color)
+
 
 class SEDAN (Auto) :
     pass
@@ -36,6 +41,7 @@ auto_hyundai = Auto("Blanco","Hyundai","2022","Lima" )
 
 auto_hyundai.imprimir_info()
 
+
 suv_hyundai = SUV("Negro","Hyundai","2023","Arequipa" )
 
 suv_hyundai.imprimir_info()
@@ -48,4 +54,12 @@ sedan_hyundai.imprimir_info()
 
 van_hyundai = VAN("Negro","Hyundai","2023","Arequipa" )
 
-suv_hyundai.imprimir_info()
+van_hyundai.imprimir_info()
+
+
+""" 
+Modificar la clase SUV, SEDAN o VAN para que me imprime  
+marca , anho y color al momento de usar el metodo imprimir_info()
+
+"""
+
